@@ -1,10 +1,13 @@
-<button (click)="filterClicked('none')">No Filter</button>
-<button (click)="filterClicked('vegetable')">Vegetable</button>
-<button (click)="filterClicked('fruit')">Fruit</button>
-
-<button (click)="sortClicked('none')">No Sorting</button>
-<button (click)="sortClicked('price')">Price</button>
-<button (click)="sortClicked('name')">Name</button>
+<ul class="item-list store--item-list">
+  <button (click)="filterClicked('none')">No Filter</button>
+  <button (click)="filterClicked('vegetable')">Vegetable</button>
+  <button (click)="filterClicked('fruit')">Fruit</button>
+</ul>
+<ul class="item-list store--item-list">
+  <button (click)="sortClicked('none')">No Sorting</button>
+  <button (click)="sortClicked('price')">Price</button>
+  <button (click)="sortClicked('name')">Name</button>
+</ul>
 
 <ul class="item-list store--item-list">
   <li *ngFor="let item of items">
