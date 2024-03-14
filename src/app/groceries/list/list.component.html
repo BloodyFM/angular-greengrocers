@@ -1,3 +1,7 @@
+<button (click)="filterClicked('none')">No Filter</button>
+<button (click)="filterClicked('vegetable')">Vegetable</button>
+<button (click)="filterClicked('fruit')">Fruit</button>
+
 <ul class="item-list store--item-list">
   <li *ngFor="let item of items">
     <div class="store--item-icon">

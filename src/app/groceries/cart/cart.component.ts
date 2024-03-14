@@ -20,6 +20,7 @@ export class CartComponent {
     return {
       id: item.id,
       name: item.name,
+      type: item.type,
       price: item.price,
     };
   };
